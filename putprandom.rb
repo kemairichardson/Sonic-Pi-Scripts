@@ -1,4 +1,5 @@
 #Pick Up the Phone
+#Sheet Music: https://musescore.com/user/17692/scores/2830876
 use_bpm 120
 x=1
 live_loop :putp do
@@ -6,7 +7,7 @@ live_loop :putp do
   melody_notes = [:D4,:G4,:Bb4,:r,:r,:A4,:C5,:F4,:B4,:D5,:G,:C5,:Eb5,:r,:Eb4,:G4,:Bb4,:r,:D4,:Fs4,:A4,:C5,:r,:F4,:A4,:D5,:r,:D4,:Fs4,:A4]
   sleeps= [0,0,0,1,1,1,1,0,0,0.5,0,0,0,0.5,0,0,0,1,1,1,0,0,0,1,1,1,0,0,0,0,1,1,1,0.5,0,0,0,1,1,1,0,0,0,1.5]
   index = 0
-  30.times do
+  30.times do #There a e 30 notes, so the loop plays until it hits 30 notes, then starts over again
     play melody_notes[index]
     sleep sleeps[index]
     index = index + 1
