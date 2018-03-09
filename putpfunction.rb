@@ -10,6 +10,7 @@ live_loop :putp do
     play melody_notes[index]
     sleep sleeps[index]
     index = index + 1
+    x= x+1
   end
 end
 i = rrand(5,45 )
